@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTech - Cửa Hàng Công Nghệ </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🌸QTech</div>
+        <div class="menu">
+            <a href="#home">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#footer">Liên hệ</a>
+        </div>
+        <div class="cart-btn">
+            <a href="#cart-popup">🛒 Giỏ hàng</a>
+        </div>
+    </div>
+
+    <!-- Banner chào mừng -->
+    <div id="home" class="banner">
+        <h1>Thế Giới Công Nghệ Màu Hồng</h1>
+        <p>Chuyên bàn phím cơ, tai nghe và phụ kiện siêu cute cho sinh viên!</p>
+        <a href="#products" class="btn">Xem sản phẩm ngay</a>
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    <div id="products" class="container">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        
+        <div class="product-list">
+            <!-- Sản phẩm 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=300&q=80" alt="Bàn phím">
+                <h3>Bàn Phím Cơ Sakura</h3>
+                <p class="price">890.000đ</p>
+                <a href="#cart-popup" class="buy-btn">Thêm vào giỏ</a>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80" alt="Tai nghe">
+                <h3>Tai Nghe Pastel Pro</h3>
+                <p class="price">650.000đ</p>
+                <a href="#cart-popup" class="buy-btn">Thêm vào giỏ</a>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=300&q=80" alt="Chuột">
+                <h3>Chuột Không Dây Macaron</h3>
+                <p class="price">240.000đ</p>
+                <a href="#cart-popup" class="buy-btn">Thêm vào giỏ</a>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=300&q=80" alt="Giá đỡ">
+                <h3>Giá Đỡ Điện Thoại Thỏ</h3>
+                <p class="price">185.000đ</p>
+                <a href="#cart-popup" class="buy-btn">Thêm vào giỏ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hộp thoại Giỏ hàng (dùng kỹ thuật :target cơ bản) -->
+    <div id="cart-popup" class="modal">
+        <div class="modal-content">
+            <h3>Giỏ Hàng Của Bạn</h3>
+            <p>1x Bàn Phím Cơ Sakura - 890.000đ</p><p>1x Chuột Không Dây Macaron - 240.000đ</p>
+            <p><b>Tổng cộng: 1.130.000đ</b></p>
+            <br>
+            <a href="#checkout-success" class="btn">Thanh toán ngay</a>
+            <br><br>
+            <a href="#products" class="close-link">Đóng giỏ hàng</a>
+        </div>
+    </div>
+
+    <!-- Hộp thoại Đặt hàng thành công -->
+    <div id="checkout-success" class="modal">
+        <div class="modal-content">
+            <h3>🎉 Đặt hàng thành công!</h3>
+            <p>Cảm ơn bạn đã mua sắm tại cửa hàng.</p>
+            <br>
+            <a href="#home" class="btn">Quay lại trang chủ</a>
+        </div>
+    </div>
+
+    <!-- Chân trang -->
+    <div id="footer" class="footer">
+        <p>&copy; 2026 QTech - Thiết kế bởi sinh viên năm nhất.</p>
+    </div>
+
+</body>
+</html>

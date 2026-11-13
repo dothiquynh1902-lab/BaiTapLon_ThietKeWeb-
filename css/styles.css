@@ -1,0 +1,166 @@
+/* Cài đặt chung đơn giản */
+body {
+    background-color: #fff0f5; /* Màu hồng phấn nhẹ */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Thanh menu */
+.header {
+    background-color: #fff0f5; /* Hồng pastel */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d1477a;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.cart-btn a {
+    background-color: #ff69b4;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    background-color: #ffc0cb;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner h1 {
+    color: #c71585;
+    margin-bottom: 10px;
+}
+
+/* Phần sản phẩm */
+.container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.container h2 {
+    text-align: center;
+    color: #d1477a;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: white;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.price {
+    color: #ff1493;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.buy-btn {
+    display: inline-block;
+    background-color: #ffb6c1;
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buy-btn:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+/* Nút bấm chung */
+.btn {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Hộp thoại Popup (Modal) đơn giản bằng CSS :target */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 3px solid #ff69b4;
+    width: 300px;
+    text-align: center;
+}
+
+.close-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Chân trang */
+.footer {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
