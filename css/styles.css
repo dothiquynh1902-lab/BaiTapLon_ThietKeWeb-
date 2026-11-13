@@ -119,43 +119,6 @@ body {
     display: inline-block;
     font-weight: bold;
 }
-
-/* Hộp thoại Popup (Modal) đơn giản bằng CSS :target */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-}
-
-.modal:target {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-content {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    border: 3px solid #ff69b4;
-    width: 300px;
-    text-align: center;
-}
-
-.close-link {
-    color: #666;
-    text-decoration: none;
-    font-size: 14px;
-}
-
 /* Chân trang */
 .footer {
     background-color: #ffb6c1;
