@@ -29,12 +29,22 @@ body {
     font-weight: bold;
 }
 
+/* Nút Giỏ hàng + Hiệu ứng hover */
 .cart-btn a {
     background-color: #ff69b4;
     color: white;
     padding: 8px 15px;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    border: 1px solid transparent; /* Giữ chỗ cho viền để không bị lệch khung khi hover */
+    transition: all 0.3s ease; /* Giúp hiệu ứng chuyển màu mượt mà */
+}
+
+.cart-btn a:hover {
+    background-color: #ffffff; /* Đổi nền thành màu trắng khi di chuột */
+    color: #ff69b4;            /* Đổi chữ thành màu hồng */
+    border: 1px solid #ff69b4; /* Thêm viền hồng cho nổi bật ô */
 }
 
 /* Banner */
@@ -102,6 +112,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .buy-btn:hover {
@@ -109,7 +120,7 @@ body {
     color: white;
 }
 
-/* Nút bấm chung */
+/* Nút bấm chung + Hiệu ứng hover */
 .btn {
     background-color: #ff69b4;
     color: white;
@@ -118,7 +129,14 @@ body {
     border-radius: 5px;
     display: inline-block;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
+
+.btn:hover {
+    background-color: #d1477a; /* Đổi sang màu hồng đậm hơn khi di chuột */
+    color: white;
+}
+
 /* Chân trang */
 .footer {
     background-color: #ffb6c1;
