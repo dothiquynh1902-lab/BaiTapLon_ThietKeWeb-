@@ -3,61 +3,530 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QTech - Cửa Hàng Công Nghệ </title>
+    <title>QTech 🌸 - Thế Giới Công Nghệ Pastel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">🌸QTech</div>
-        <div class="menu">
+
+    <!-- Thanh điều hướng -->
+    <header class="navbar">
+        <a href="#home" class="logo">🌸 Q<span>Tech</span></a>
+        <nav class="menu">
             <a href="#home">Trang chủ</a>
             <a href="#products">Sản phẩm</a>
-            <a href="#footer">Liên hệ</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+        <a href="#cart-popup" class="cart-link">🛍️ Giỏ xinh (2)</a>
+    </header>
+
+    <!-- Trang chủ / Hero & Bento Grid -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="tag-pill">✨ Bộ Sưu Tập Công Nghệ Pastel 2026</span>
+                <h1>Nâng Tầm Góc Học Tập Với <span>Phụ Kiện Màu Hồng</span></h1>
+                <p>Từ bàn phím cơ gõ êm ái đến tai nghe tai mèo phát sáng — tất cả đều được tuyển chọn dành riêng cho hội yêu màu hồng và sự dễ thương.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn-main">Khám phá ngay 💖</a>
+                    <a href="#promo-popup" class="btn-outline">🎁 Nhận mã giảm 15%</a>
+                </div>
+            </div>
+
+            <div class="bento-grid">
+                <a href="#prod-keyboard" class="bento-item bento-large">
+                    <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80" alt="Bàn phím cơ Sakura">
+                    <div class="bento-label">⌨️ Bàn phím cơ Sakura</div>
+                </a>
+                <a href="#prod-headphone" class="bento-item">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Tai nghe Pastel">
+                    <div class="bento-label">🎧 Tai nghe</div>
+                </a>
+                <a href="#prod-mouse" class="bento-item">
+                    <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=400&q=80" alt="Chuột Macaron">
+                    <div class="bento-label">🖱️ Chuột xinh</div>
+                </a>
+            </div>
         </div>
-        <div class="cart-btn">
-            <a href="#cart-popup">🛒 Giỏ hàng</a>
+    </section>
+
+    <!-- Thẻ cam kết dịch vụ -->
+    <section class="features container">
+        <a href="#policy-ship" class="feature-box">
+            <div class="feature-icon">🚚</div>
+            <h3>Freeship Toàn Quốc</h3>
+            <p>Miễn phí giao hàng cho đơn từ 299k</p>
+        </a>
+        <a href="#policy-warranty" class="feature-box">
+            <div class="feature-icon">🛡️</div>
+            <h3>Bảo Hành 1 Đổi 1</h3>
+            <p>Hỗ trợ đổi mới trong 12 tháng</p>
+        </a>
+        <a href="#policy-gift" class="feature-box">
+            <div class="feature-icon">🎀</div>
+            <h3>Gói Quà Miễn Phí</h3>
+            <p>Kèm thiệp chúc mừng siêu dễ thương</p>
+        </a>
+    </section>
+
+    <!-- Khu vực Sản phẩm -->
+    <section id="products" class="products-section container">
+        <div class="section-header">
+            <h2>🎀 Sản Phẩm Nổi Bật 🎀</h2>
+            <p>Bấm "Xem chi tiết" để xem thông số hoặc "Thêm vào giỏ" để đặt mua</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Sản phẩm 1 -->
+            <div id="prod-keyboard" class="product-card">
+                <div class="img-box">
+                    <span class="badge-hot">Bán chạy 🔥</span>
+                    <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=500&q=80" alt="Bàn phím cơ Sakura">
+                </div>
+                <div class="card-body">
+                    <span class="cat-name">Bàn phím cơ</span>
+                    <h3>Bàn Phím Cơ Sakura Pink LED</h3>
+                    <div class="price-row">
+                        <span class="price-new">890.000đ</span>
+                        <span class="price-old">1.150.000đ</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#detail-1" class="btn-detail">Xem chi tiết 🔍</a>
+                        <a href="#added-1" class="btn-add">Thêm vào giỏ 💗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div id="prod-headphone" class="product-card">
+                <div class="img-box">
+                    <span class="badge-new">Mới về ✨</span>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Tai nghe Pastel">
+                </div>
+                <div class="card-body">
+                    <span class="cat-name">Âm thanh</span>
+                    <h3>Tai Nghe Chụp Tai Pastel Pro</h3>
+                    <div class="price-row">
+                        <span class="price-new">650.000đ</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#detail-2" class="btn-detail">Xem chi tiết 🔍</a>
+                        <a href="#added-2" class="btn-add">Thêm vào giỏ 💗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div id="prod-mouse" class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=500&q=80" alt="Chuột không dây">
+                </div>
+                <div class="card-body">
+                    <span class="cat-name">Chuột máy tính</span>
+                    <h3>Chuột Bluetooth Yên Tĩnh Macaron</h3>
+                    <div class="price-row">
+                        <span class="price-new">240.000đ</span>
+                        <span class="price-old">320.000đ</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#detail-3" class="btn-detail">Xem chi tiết 🔍</a>
+                        <a href="#added-3" class="btn-add">Thêm vào giỏ 💗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <span class="badge-hot">Hot 💕</span>
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=500&q=80" alt="Giá đỡ điện thoại">
+                </div>
+                <div class="card-body">
+                    <span class="cat-name">Phụ kiện bàn học</span>
+                    <h3>Giá Đỡ Điện Thoại & Đèn Ngủ Thỏ</h3>
+                    <div class="price-row">
+                        <span class="price-new">185.000đ</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#detail-4" class="btn-detail">Xem chi tiết 🔍</a>
+                        <a href="#added-4" class="btn-add">Thêm vào giỏ 💗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 5 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <span class="badge-new">Yêu thích 🌸</span>
+                    <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80" alt="Lót chuột">
+                </div>
+                <div class="card-body">
+                    <span class="cat-name">Phụ kiện setup</span>
+                    <h3>Lót Chuột Cỡ Lớn Họa Tiết Mây Hồng</h3>
+                    <div class="price-row">
+                        <span class="price-new">145.000đ</span>
+                        <span class="price-old">190.000đ</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#detail-5" class="btn-detail">Xem chi tiết 🔍</a>
+                        <a href="#added-5" class="btn-add">Thêm vào giỏ 💗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=500&q=80" alt="Loa mini">
+                </div>
+                <div class="card-body">
+                    <span class="cat-name">Âm thanh</span>
+                    <h3>Loa Bluetooth Mini Retro Pastel</h3>
+                    <div class="price-row">
+                        <span class="price-new">420.000đ</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#detail-6" class="btn-detail">Xem chi tiết 🔍</a>
+                        <a href="#added-6" class="btn-add">Thêm vào giỏ 💗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Ưu đãi sinh viên -->
+    <section class="promo-banner container">
+        <div class="promo-box">
+            <div>
+                <span class="promo-badge">🎓 Dành Riêng Cho Sinh Viên</span>
+                <h2>Giảm Ngay 15% Cho Đơn Hàng Đầu Tiên!</h2>
+                <p>Nhập mã <strong>QTECH2026</strong> khi thanh toán để nhận ưu đãi và quà tặng móc khóa xinh xắn.</p>
+            </div>
+            <a href="#promo-popup" class="btn-white">Lấy mã ngay ✨</a>
+        </div>
+    </section>
+
+    <!-- Khu vực Liên hệ -->
+    <section id="contact" class="contact-section container">
+        <div class="section-header">
+            <h2>💌 Liên Hệ Với QTech 💌</h2>
+            <p>Cần tư vấn chọn đồ setup góc học tập? Nhắn tin cho tụi mình nhé!</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Thông Tin Cửa Hàng</h3>
+                <p>Cửa hàng phụ kiện công nghệ phong cách dễ thương dành cho sinh viên và các bạn yêu màu hồng.</p>
+                <div class="info-list">
+                    <div class="info-item">📍 <strong>Địa chỉ:</strong> 123 Đường Cầu Giấy, Hà Nội</div>
+                    <div class="info-item">📞 <strong>Hotline:</strong> 1900 6868 (8:00 - 21:00)</div>
+                    <div class="info-item">📧 <strong>Email:</strong> support@qtech.vn</div>
+                    <div class="info-item">🌸 <strong>Instagram / TikTok:</strong> @qtech.pastel</div>
+                </div>
+                <div class="social-links">
+                    <a href="#social-fb" class="social-btn">Facebook</a>
+                    <a href="#social-ig" class="social-btn">Instagram</a>
+                    <a href="#social-tt" class="social-btn">TikTok</a>
+                </div>
+            </div>
+
+            <form action="#contact-sent" class="contact-form">
+                <h3>Gửi Lời Nhắn Cho Tụi Mình</h3>
+                <input type="text" placeholder="Tên của bạn..." required>
+                <input type="email" placeholder="Email hoặc số điện thoại..." required>
+                <textarea rows="4" placeholder="Bạn đang tìm bàn phím, tai nghe hay phụ kiện gì nè?"></textarea>
+                <button type="submit" class="btn-main full-btn">Gửi tin nhắn 💌</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chân trang -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <h3>🌸 QTech</h3>
+                <p>Biến mọi góc học tập trở thành nguồn cảm hứng ngọt ngào mỗi ngày.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Trang chủ</a>
+                <a href="#products">Sản phẩm</a>
+                <a href="#contact">Liên hệ</a>
+                <a href="#cart-popup">Giỏ hàng</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 QTech Store. Thiết kế bằng HTML5 & CSS3.
+        </div>
+    </footer>
+
+    <!-- ================= CÁC HỘP THOẠI TƯƠNG TÁC (:target) ================= -->
+
+    <!-- 1. Popup Giỏ hàng -->
+    <div id="cart-popup" class="modal">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h3>🛍️ Giỏ Hàng Của Bạn</h3>
+                <a href="#products" class="close-btn">&times;</a>
+            </div>
+            <div class="cart-row">
+                <span>1x Bàn Phím Cơ Sakura Pink</span>
+                <strong>890.000đ</strong>
+            </div>
+            <div class="cart-row">
+                <span>1x Chuột Bluetooth Macaron</span>
+                <strong>240.000đ</strong>
+            </div>
+            <div class="cart-sum">
+                <span>Tổng cộng:</span>
+                <strong>1.130.000đ</strong>
+            </div>
+            <a href="#order-done" class="btn-main full-btn">Thanh toán ngay 💖</a>
         </div>
     </div>
 
-    <div id="home" class="banner">
-        <h1>Thế Giới Công Nghệ Màu Hồng</h1>
-        <p>Chuyên bàn phím cơ, tai nghe và phụ kiện siêu cute cho sinh viên!</p>
-        <a href="#products" class="btn">Xem sản phẩm ngay</a>
+    <!-- 2. Popup Thanh toán thành công -->
+    <div id="order-done" class="modal">
+        <div class="modal-box center-text">
+            <h2>🎉 Đặt Hàng Thành Công!</h2>
+            <p>Cảm ơn cậu đã ủng hộ QTech! Đơn hàng màu hồng siêu xinh đang được đóng gói và sẽ giao tới cậu sớm nhất.</p>
+            <a href="#home" class="btn-main">Về trang chủ 🌸</a>
+        </div>
     </div>
-    <div id="products" class="container">
-        <h2>Sản Phẩm Nổi Bật</h2>
-        
-        <div class="product-list">
-            <div class="product-card">
-                <img src="assets/anh ban phim.jpg" alt="Bàn phím">
-                <h3>Bàn Phím Cơ</h3>
-                <p class="price">890.000đ</p>
-                <a href="#cart-popup" class="buy-btn">Thêm vào giỏ</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/tai nghe.jpg" alt="Tai nghe">
-                <h3>Tai Nghe</h3>
-                <p class="price">650.000đ</p>
-                <a href="#cart-popup" class="buy-btn">Thêm vào giỏ</a>
-            </div>
 
-            <div class="product-card">
-                <img src="assets/chuot.jpg" alt="Chuột">
-                <h3>Chuột Không Dây</h3>
-                <p class="price">240.000đ</p>
-                <a href="#cart-popup" class="buy-btn">Thêm vào giỏ</a>
+    <!-- 3. Popup Mã giảm giá -->
+    <div id="promo-popup" class="modal">
+        <div class="modal-box center-text">
+            <h2>🎁 Mã Ưu Đãi Sinh Viên</h2>
+            <p>Sử dụng mã bên dưới khi đặt hàng để được giảm ngay <strong>15%</strong>:</p>
+            <div class="coupon-code">QTECH2026</div>
+            <p class="small-note">Áp dụng cho tất cả đơn hàng từ 200.000đ</p>
+            <a href="#products" class="btn-main">Dùng mã mua sắm ngay 💖</a>
+        </div>
+    </div>
+
+    <!-- 4. Popup Gửi liên hệ thành công -->
+    <div id="contact-sent" class="modal">
+        <div class="modal-box center-text">
+            <h2>💌 Đã Gửi Tin Nhắn!</h2>
+            <p>Cảm ơn cậu đã liên hệ với QTech. Đội ngũ tư vấn sẽ phản hồi qua Email/SĐT trong vòng 15 phút nhé!</p>
+            <a href="#contact" class="btn-main">Đóng thông báo 🌸</a>
+        </div>
+    </div>
+
+    <!-- 5. Popup Xem chi tiết từng sản phẩm (1 -> 6) -->
+    <div id="detail-1" class="modal">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h3>⌨️ Bàn Phím Cơ Sakura Pink</h3>
+                <a href="#products" class="close-btn">&times;</a>
             </div>
-            <div class="product-card">
-                <img src="assets/sac du phong.jpg" alt="Sạc dự phòng">
-                <h3>Sạc dự phòng </h3>
-                <p class="price">185.000đ</p>
-                <a href="#cart-popup" class="buy-btn">Thêm vào giỏ</a>
+            <ul class="spec-list">
+                <li><strong>Layout:</strong> 84 phím nhỏ gọn, tiết kiệm diện tích</li>
+                <li><strong>Switch:</strong> Red Switch gõ êm, không gây ồn</li>
+                <li><strong>Đèn nền:</strong> LED hồng pastel 18 chế độ</li>
+                <li><strong>Kết nối:</strong> Cáp Type-C tháo rời tiện lợi</li>
+            </ul>
+            <div class="cart-sum"><span>Giá ưu đãi:</span><strong>890.000đ</strong></div>
+            <a href="#added-1" class="btn-main full-btn">Thêm vào giỏ hàng 💗</a>
+        </div>
+    </div>
+
+    <div id="detail-2" class="modal">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h3>🎧 Tai Nghe Pastel Pro</h3>
+                <a href="#products" class="close-btn">&times;</a>
+            </div>
+            <ul class="spec-list">
+                <li><strong>Kết nối:</strong> Bluetooth 5.3 + Jack cắm 3.5mm</li>
+                <li><strong>Thời lượng pin:</strong> Nghe nhạc liên tục 24 giờ</li>
+                <li><strong>Đệm tai:</strong> Bọc da mềm mại, đeo lâu không đau tai</li>
+                <li><strong>Tính năng:</strong> Tích hợp micro lọc ồn học online</li>
+            </ul>
+            <div class="cart-sum"><span>Giá ưu đãi:</span><strong>650.000đ</strong></div>
+            <a href="#added-2" class="btn-main full-btn">Thêm vào giỏ hàng 💗</a>
+        </div>
+    </div>
+
+    <div id="detail-3" class="modal">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h3>🖱️ Chuột Bluetooth Macaron</h3>
+                <a href="#products" class="close-btn">&times;</a>
+            </div>
+            <ul class="spec-list">
+                <li><strong>Thiết kế:</strong> Silent Click giảm 90% tiếng ồn</li>
+                <li><strong>Kết nối:</strong> Kép (Bluetooth + Đầu thu USB 2.4G)</li>
+                <li><strong>Pin:</strong> Pin sạc tích hợp dùng 30 ngày</li>
+                <li><strong>Độ nhạy:</strong> 3 mức DPI 800 / 1200 / 1600</li>
+            </ul>
+            <div class="cart-sum"><span>Giá ưu đãi:</span><strong>240.000đ</strong></div>
+            <a href="#added-3" class="btn-main full-btn">Thêm vào giỏ hàng 💗</a>
+        </div>
+    </div>
+
+    <div id="detail-4" class="modal">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h3>🐰 Giá Đỡ & Đèn Ngủ Thỏ</h3>
+                <a href="#products" class="close-btn">&times;</a>
+            </div>
+            <ul class="spec-list">
+                <li><strong>Chất liệu:</strong> Silicon mềm dẻo an toàn + Nhựa ABS</li>
+                <li><strong>Chức năng:</strong> Giá đỡ điện thoại/iPad + Đèn ngủ 3 mức sáng</li>
+                <li><strong>Hẹn giờ:</strong> Tự động tắt sau 30 phút</li>
+            </ul>
+            <div class="cart-sum"><span>Giá ưu đãi:</span><strong>185.000đ</strong></div>
+            <a href="#added-4" class="btn-main full-btn">Thêm vào giỏ hàng 💗</a>
+        </div>
+    </div>
+
+    <div id="detail-5" class="modal">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h3>☁️ Lót Chuột Mây Hồng Cỡ Lớn</h3>
+                <a href="#products" class="close-btn">&times;</a>
+            </div>
+            <ul class="spec-list">
+                <li><strong>Kích thước:</strong> 80cm x 30cm (để vừa cả phím và chuột)</li>
+                <li><strong>Bề mặt:</strong> Vải mịn chống thấm nước, bo viền chắc chắn</li>
+                <li><strong>Đế:</strong> Cao su chống trượt bám bàn tốt</li>
+            </ul>
+            <div class="cart-sum"><span>Giá ưu đãi:</span><strong>145.000đ</strong></div>
+            <a href="#added-5" class="btn-main full-btn">Thêm vào giỏ hàng 💗</a>
+        </div>
+    </div>
+
+    <div id="detail-6" class="modal">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h3>📻 Loa Bluetooth Mini Retro</h3>
+                <a href="#products" class="close-btn">&times;</a>
+            </div>
+            <ul class="spec-list">
+                <li><strong>Công suất:</strong> 5W âm thanh trong trẻo, bass ấm</li>
+                <li><strong>Hỗ trợ:</strong> Bluetooth, thẻ nhớ TF, cổng AUX</li>
+                <li><strong>Kích thước:</strong> Nhỏ gọn nằm gọn trong lòng bàn tay</li>
+            </ul>
+            <div class="cart-sum"><span>Giá ưu đãi:</span><strong>420.000đ</strong></div>
+            <a href="#added-6" class="btn-main full-btn">Thêm vào giỏ hàng 💗</a>
+        </div>
+    </div>
+
+    <!-- 6. Popup Xác nhận đã thêm từng sản phẩm vào giỏ -->
+    <div id="added-1" class="modal">
+        <div class="modal-box center-text">
+            <h2>✅ Đã Thêm Vào Giỏ!</h2>
+            <p><strong>Bàn Phím Cơ Sakura Pink LED</strong> đã nằm gọn trong giỏ xinh của cậu.</p>
+            <div class="modal-actions">
+                <a href="#cart-popup" class="btn-main">Xem giỏ hàng 🛍️</a>
+                <a href="#products" class="btn-outline">Mua tiếp</a>
             </div>
         </div>
     </div>
 
-    <div id="footer" class="footer">
-        <p>&copy; 2026 QTech - Thiết kế bởi sinh viên năm nhất.</p>
+    <div id="added-2" class="modal">
+        <div class="modal-box center-text">
+            <h2>✅ Đã Thêm Vào Giỏ!</h2>
+            <p><strong>Tai Nghe Chụp Tai Pastel Pro</strong> đã nằm gọn trong giỏ xinh của cậu.</p>
+            <div class="modal-actions">
+                <a href="#cart-popup" class="btn-main">Xem giỏ hàng 🛍️</a>
+                <a href="#products" class="btn-outline">Mua tiếp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="added-3" class="modal">
+        <div class="modal-box center-text">
+            <h2>✅ Đã Thêm Vào Giỏ!</h2>
+            <p><strong>Chuột Bluetooth Yên Tĩnh Macaron</strong> đã nằm gọn trong giỏ xinh của cậu.</p>
+            <div class="modal-actions">
+                <a href="#cart-popup" class="btn-main">Xem giỏ hàng 🛍️</a>
+                <a href="#products" class="btn-outline">Mua tiếp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="added-4" class="modal">
+        <div class="modal-box center-text">
+            <h2>✅ Đã Thêm Vào Giỏ!</h2>
+            <p><strong>Giá Đỡ Điện Thoại & Đèn Ngủ Thỏ</strong> đã nằm gọn trong giỏ xinh của cậu.</p>
+            <div class="modal-actions">
+                <a href="#cart-popup" class="btn-main">Xem giỏ hàng 🛍️</a>
+                <a href="#products" class="btn-outline">Mua tiếp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="added-5" class="modal">
+        <div class="modal-box center-text">
+            <h2>✅ Đã Thêm Vào Giỏ!</h2>
+            <p><strong>Lót Chuột Cỡ Lớn Họa Tiết Mây Hồng</strong> đã nằm gọn trong giỏ xinh của cậu.</p>
+            <div class="modal-actions">
+                <a href="#cart-popup" class="btn-main">Xem giỏ hàng 🛍️</a>
+                <a href="#products" class="btn-outline">Mua tiếp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="added-6" class="modal">
+        <div class="modal-box center-text">
+            <h2>✅ Đã Thêm Vào Giỏ!</h2>
+            <p><strong>Loa Bluetooth Mini Retro Pastel</strong> đã nằm gọn trong giỏ xinh của cậu.</p>
+            <div class="modal-actions">
+                <a href="#cart-popup" class="btn-main">Xem giỏ hàng 🛍️</a>
+                <a href="#products" class="btn-outline">Mua tiếp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Popup Chính sách & Mạng xã hội -->
+    <div id="policy-ship" class="modal">
+        <div class="modal-box center-text">
+            <h2>🚚 Chính Sách Giao Hàng</h2>
+            <p>QTech miễn phí vận chuyển toàn quốc cho mọi đơn hàng từ <strong>299.000đ</strong>. Thời gian nhận hàng từ 1–3 ngày làm việc.</p>
+            <a href="#home" class="btn-main">Đã hiểu 💖</a>
+        </div>
+    </div>
+
+    <div id="policy-warranty" class="modal">
+        <div class="modal-box center-text">
+            <h2>🛡️ Chính Sách Bảo Hành</h2>
+            <p>Tất cả thiết bị điện tử (bàn phím, tai nghe, chuột, loa) đều được bảo hành <strong>12 tháng 1 đổi 1</strong> nếu có lỗi từ nhà sản xuất.</p>
+            <a href="#home" class="btn-main">Đã hiểu 💖</a>
+        </div>
+    </div>
+
+    <div id="policy-gift" class="modal">
+        <div class="modal-box center-text">
+            <h2>🎀 Dịch Vụ Gói Quà</h2>
+            <p>Tụi mình tặng kèm hộp quà màu hồng pastel, giấy rơm và thiệp viết tay theo yêu cầu hoàn toàn miễn phí cho mọi đơn hàng.</p>
+            <a href="#home" class="btn-main">Tuyệt vời 💖</a>
+        </div>
+    </div>
+
+    <div id="social-fb" class="modal">
+        <div class="modal-box center-text">
+            <h2>📘 Fanpage Facebook QTech</h2>
+            <p>Theo dõi fanpage <strong>QTech - Phụ Kiện Công Nghệ Hồng</strong> để cập nhật các mẫu bàn phím mới nhất nhé!</p>
+            <a href="#contact" class="btn-main">Quay lại</a>
+        </div>
+    </div>
+
+    <div id="social-ig" class="modal">
+        <div class="modal-box center-text">
+            <h2>📸 Instagram @qtech.pastel</h2>
+            <p>Ghé thăm Instagram của tụi mình để xem hàng trăm góc setup bàn học màu hồng siêu xinh từ các bạn sinh viên!</p>
+            <a href="#contact" class="btn-main">Quay lại</a>
+        </div>
+    </div>
+
+    <div id="social-tt" class="modal">
+        <div class="modal-box center-text">
+            <h2>🎵 Kênh TikTok @qtech.pastel</h2>
+            <p>Xem video unbox và test tiếng gõ bàn phím cơ (ASMR) cực đã tai trên kênh TikTok của QTech!</p>
+            <a href="#contact" class="btn-main">Quay lại</a>
+        </div>
     </div>
 
 </body>
