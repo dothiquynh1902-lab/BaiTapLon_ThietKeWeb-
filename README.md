@@ -1,30 +1,111 @@
-# BaiTapLon_ThietKeWeb-
-Bài lập trình web - Đỗ Thị Quỳnh - 2071020163
-# 🌸 QTech — Phụ Kiện Công Nghệ Pastel
+# 💻 Q-TECH – WEBSITE BÁN ĐỒ CÔNG NGHỆ
 
-Website giới thiệu và trưng bày phụ kiện công nghệ phong cách dễ thương, tông màu hồng pastel dành cho sinh viên và người yêu thích trang trí góc học tập/làm việc.
+> Khám phá thế giới công nghệ – Lựa chọn sản phẩm phù hợp với bạn!
 
-## 🌐 Xem trực tiếp (Live Demo)
-- **Trang web:** [https://dothiquynh1902-lab.github.io/BaiTapLon_ThietKeWeb-/](https://dothiquynh1902-lab.github.io/BaiTapLon_ThietKeWeb-/)
+## 1. Giới thiệu dự án
 
-## ✨ Tính năng nổi bật
-- **Giao diện chủ đề Pastel:** Thiết kế tươi sáng, dễ nhìn, tối ưu trải nghiệm trên cả máy tính và thiết bị di động.
-- **Danh mục sản phẩm đa dạng:** Gồm bàn phím cơ, tai nghe chụp tai, chuột không dây, giá đỡ & đèn ngủ, lót chuột cỡ lớn và loa mini.
-- **Xem chi tiết & Giỏ hàng tương tác:** Hỗ trợ mở cửa sổ xem thông số sản phẩm, thông báo thêm vào giỏ hàng, xem giỏ hàng mẫu và mã ưu đãi sinh viên (`QTECH2026`).
-- **Chính sách & Liên hệ:** Hiển thị thông tin freeship, bảo hành 1 đổi 1, gói quà miễn phí cùng thông tin liên hệ của cửa hàng.
+**Q-Tech** là dự án website bán đồ công nghệ được xây dựng trong quá trình học tập môn Thiết kế Web.
 
-## 🛠️ Công nghệ sử dụng
-- **HTML5**
-- **CSS3**
+Website hướng đến việc giới thiệu và trưng bày các sản phẩm công nghệ, giúp người dùng dễ dàng tìm hiểu, tham khảo và lựa chọn những phụ kiện phù hợp với nhu cầu sử dụng.
 
-## 📁 Cấu trúc thư mục dự án
+Dự án được xây dựng bằng HTML và CSS, tập trung vào thiết kế giao diện trực quan, bố cục rõ ràng và trải nghiệm người dùng.
+
+## 2. Mục tiêu dự án
+
+- Vận dụng kiến thức HTML và CSS vào thực tế.
+- Xây dựng giao diện website bán hàng trực tuyến.
+- Rèn luyện kỹ năng thiết kế và tổ chức mã nguồn.
+- Làm quen với quy trình quản lý dự án bằng Git và GitHub.
+
+## 3. Công nghệ sử dụng
+
+| Công nghệ | Mục đích |
+|---|---|
+| HTML5 | Xây dựng cấu trúc website |
+| CSS3 | Thiết kế và định dạng giao diện |
+| Git | Quản lý phiên bản mã nguồn |
+| GitHub | Lưu trữ và quản lý dự án |
+
+## 4. Cấu trúc thư mục
+
 ```text
-bai tap lon - thiet ke web/
-├── assets/         # Hình ảnh sản phẩm và tư liệu giao diện
-├── css/            # Thư mục chứa file định dạng giao diện (styles.css)
-├── docs/           # Ảnh minh chứng dự án
-├── AI_LOG.md       # Nhật ký ghi nhận quá trình hỗ trợ và làm việc với AI
-├── changelog.md    # Nhật ký thay đổi và lịch sử cập nhật các phiên bản
-├── index.html      # Cấu trúc trang chủ, sản phẩm, liên hệ và các hộp thoại 
-├── README.md       # Tài liệu giới thiệu và hướng dẫn chạy dự án
-└── styles.css      # Tệp định dạng CSS ở thư mục gốc
+Q-TECH/
+│
+├── assets/
+│   ├── anh ban phim.jpg
+│   ├── chuot.jpg
+│   ├── sac du phong.jpg
+│   ├── tai nghe.jpg
+│   ├── loa.jpg
+│   └── lot chuot.jpg
+│
+├── css/
+│   └── styles.css
+│
+├── index.html
+├── README.md
+├── CHANGELOG.md
+└── AI_LOG.md
+```
+
+## 5. Các sản phẩm được giới thiệu
+
+Website có các hình ảnh minh họa sản phẩm công nghệ và phụ kiện như:
+
+- Bàn phím.
+- Chuột máy tính.
+- Sạc dự phòng.
+- Tai nghe.
+- Loa.
+- Lót chuột.
+
+## 6. Cách chạy dự án
+
+Bạn có thể mở website trực tiếp trên máy tính bằng các bước:
+
+1. Tải hoặc Clone repository về máy.
+2. Mở thư mục dự án bằng Visual Studio Code.
+3. Tìm file `index.html`.
+4. Nhấn chuột phải và chọn **Open with Live Server** (nếu đã cài extension).
+5. Website sẽ được mở trên trình duyệt.
+
+## 7. Quản lý mã nguồn
+
+Dự án sử dụng Git và GitHub để lưu trữ, theo dõi lịch sử chỉnh sửa và cập nhật mã nguồn.
+
+Các hoạt động quản lý bao gồm:
+- Commit những thay đổi trong quá trình phát triển.
+- Push mã nguồn lên GitHub.
+- Theo dõi lịch sử phiên bản.
+- Ghi lại các thay đổi trong CHANGELOG.md.
+
+## 8. Hướng phát triển
+
+Trong thời gian tới, dự án có thể được phát triển thêm:
+
+- Hoàn thiện giao diện trên nhiều thiết bị.
+- Bổ sung chức năng tìm kiếm sản phẩm.
+- Xây dựng chức năng giỏ hàng.
+- Bổ sung trang chi tiết sản phẩm.
+- Tích hợp JavaScript để tăng tính tương tác.
+- Hoàn thiện trải nghiệm mua sắm trực tuyến.
+
+## 9. Tác giả
+
+**Dự án học tập:** Thiết kế Web
+
+**Tên dự án:** Q-Tech – Website bán đồ công nghệ
+
+**Người thực hiện:** [Điền họ và tên]
+
+**Mã sinh viên:** [Điền MSSV]
+
+**Lớp:** [Điền lớp]
+
+**Trường:** [Điền tên trường]
+
+---
+
+⭐ Cảm ơn bạn đã ghé thăm dự án Q-Tech!
+
+*Q-Tech – Công nghệ trong tầm tay, trải nghiệm theo cách riêng.*
