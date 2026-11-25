@@ -96,13 +96,13 @@ Trong thời gian tới, dự án có thể được phát triển thêm:
 
 **Tên dự án:** Q-Tech – Website bán đồ công nghệ
 
-**Người thực hiện:** [Điền họ và tên]
+**Người thực hiện:** Đỗ Thị Quỳnh
 
-**Mã sinh viên:** [Điền MSSV]
+**Mã sinh viên:** 2071020163
 
-**Lớp:** [Điền lớp]
+**Lớp:** CNTT20-02
 
-**Trường:** [Điền tên trường]
+**Trường:** Đại Học Đại Nam
 
 ---
 
