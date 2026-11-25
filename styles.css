@@ -33,7 +33,6 @@ body {
     padding: 0 20px;
 }
 
-/* Thanh menu cố định */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -89,7 +88,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Hero Section + Bento Grid */
 .hero-section {
     background: linear-gradient(135deg, #ffd6e5 0%, #fff0f5 100%);
     padding: 60px 6% 80px;
@@ -175,7 +173,6 @@ body {
     background: var(--pink-soft);
 }
 
-/* Bento Grid ảnh */
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -220,7 +217,6 @@ body {
     color: var(--text-main);
 }
 
-/* Thẻ cam kết */
 .features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -281,7 +277,6 @@ body {
     font-size: 15px;
 }
 
-/* Lưới sản phẩm */
 .products-section {
     margin-bottom: 70px;
 }
@@ -416,7 +411,7 @@ body {
     color: var(--white);
 }
 
-/* Banner Ưu đãi */
+
 .promo-banner {
     margin-bottom: 70px;
 }
@@ -463,7 +458,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Khu vực Liên hệ */
 .contact-section {
     margin-bottom: 70px;
 }
@@ -533,7 +527,6 @@ body {
     border-color: var(--pink-main);
 }
 
-/* Chân trang */
 footer {
     background: var(--pink-soft);
     padding-top: 40px;
@@ -569,7 +562,6 @@ footer {
     font-weight: 600;
 }
 
-/* Popup / Modal (:target) */
 .modal {
     position: fixed;
     top: 0; left: 0;
@@ -661,7 +653,6 @@ footer {
     margin-bottom: 18px !important;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
