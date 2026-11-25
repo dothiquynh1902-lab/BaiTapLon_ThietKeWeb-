@@ -19,7 +19,11 @@ Website giới thiệu và trưng bày phụ kiện công nghệ phong cách d�
 
 ## 📁 Cấu trúc thư mục dự án
 ```text
-BaiTapLon_ThietKeWeb-/
-├── assets/          # Thư mục chứa hình ảnh sản phẩm (bàn phím, tai nghe, chuột...)
-├── index.html       # Trang chủ chính của website
-└── README.md        # Tài liệu giới thiệu dự án
+bai tap lon - thiet ke web/
+├── assets/         # Hình ảnh sản phẩm và tư liệu giao diện
+├── css/            # Thư mục chứa file định dạng giao diện (ví dụ: styles.css)
+├── docs/           # Ảnh minh chứng dự án
+├── AI_LOG.md       # Nhật ký ghi nhận quá trình hỗ trợ và làm việc với AI
+├── index.html      # Cấu trúc trang chủ, sản phẩm, liên hệ và các hộp thoại (:target)
+├── README.md       # Tài liệu giới thiệu và hướng dẫn chạy dự án
+└── styles.css      # Tệp định dạng CSS chính của dự án
