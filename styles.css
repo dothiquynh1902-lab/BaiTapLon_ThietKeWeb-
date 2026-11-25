@@ -72,6 +72,7 @@ body {
 }
 
 .cart-link {
+    display: inline-block;
     text-decoration: none;
     background: linear-gradient(135deg, var(--pink-main), var(--pink-dark));
     color: var(--white);
@@ -81,6 +82,7 @@ body {
     font-size: 14px;
     box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .cart-link:hover {
@@ -238,6 +240,7 @@ body {
     border: 2px solid var(--pink-soft);
     box-shadow: 0 8px 20px rgba(255, 105, 180, 0.1);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .feature-box:hover {
@@ -285,7 +288,7 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -387,6 +390,7 @@ body {
     font-size: 13px;
     font-weight: 700;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn-detail:hover {
@@ -404,6 +408,7 @@ body {
     font-size: 13px;
     font-weight: 700;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn-add:hover {
@@ -487,11 +492,13 @@ body {
 .info-item {
     margin-bottom: 10px;
     font-size: 15px;
+    word-break: break-word;
 }
 
 .social-links {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
     margin-top: 15px;
 }
 
@@ -519,6 +526,7 @@ body {
     border-radius: 16px;
     font-size: 14px;
     outline: none;
+    resize: vertical;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
@@ -548,15 +556,9 @@ footer {
     margin-bottom: 6px;
 }
 
-.footer-links a {
-    text-decoration: none;
-    color: var(--text-main);
-    font-weight: 700;
-    margin-left: 20px;
-}
-
-.footer-links a:hover {
-    color: var(--pink-main);
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 14px;
 }
 
 .copyright {
@@ -622,33 +624,6 @@ footer {
     color: var(--pink-main);
 }
 
-.cart-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--pink-soft);
-    font-size: 15px;
-}
-
-.cart-sum {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    margin: 18px 0;
-    color: var(--pink-dark);
-}
-
-.spec-list {
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-.spec-list li {
-    padding: 8px 0;
-    border-bottom: 1px solid var(--pink-soft);
-    font-size: 14px;
-}
-
 .full-btn {
     width: 100%;
     text-align: center;
@@ -669,12 +644,6 @@ footer {
     margin-bottom: 20px;
 }
 
-.modal-actions {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
 .coupon-code {
     background: var(--pink-soft);
     color: var(--pink-dark);
@@ -693,13 +662,28 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
-    .hero-container, .features, .contact-grid {
+    .hero-container, .features, .contact-grid, .product-grid {
         grid-template-columns: 1fr;
+    }
+    .hero-text h1 {
+        font-size: 32px;
     }
     .promo-box {
         flex-direction: column;
         text-align: center;
+        padding: 28px 24px;
     }
-    .menu { display: none; }
+    .contact-grid {
+        padding: 24px;
+    }
+    .menu {
+        display: none;
+    }
 }
